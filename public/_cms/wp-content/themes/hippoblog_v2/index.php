@@ -1,7 +1,5 @@
 <?php
 
-echo __FILE__;
-
 $template = 'basic';
 $component_name = 'home';
 

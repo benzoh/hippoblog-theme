@@ -1,8 +1,3 @@
-<?php
-echo __FILE__;
-// exit;
-?>
-
 <!doctype html>
 <html lang="ja">
 
