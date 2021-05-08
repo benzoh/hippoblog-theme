@@ -2,12 +2,13 @@ const gulp = require('gulp');
 const path = require("path");
 const sass = require('gulp-sass');
 const postcss = require('gulp-postcss');
-const sourcemaps   = require('gulp-sourcemaps');
+const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('autoprefixer');
 
 // config
-var assets_path = './public/_cms/wp-content/themes/hippoblog_v1/_assets';
-var src_path = assets_path + '/scss/**/*.scss';
+var assets_path = './public/_cms/wp-content/themes/hippoblog_v2/_assets';
+var src_path = 'assets_src/scss/index.scss';
+const watch_path = 'assets_src/scss';
 var dest_path = assets_path + '/css';
 
 const SASS_INCLUDE_PATHS = [
@@ -30,11 +31,8 @@ gulp.task('sass', () => {
 });
 
 gulp.task('watch:sass', () => {
-  // v3
-  gulp.watch(src_path, ['sass']);
-  // v4
-  // return gulp.watch(
-  //   src_path,
-  //   gulp.parallel('sass')
-  // );
+  return gulp.watch(
+    watch_path + '/**/*.scss',
+    gulp.parallel('sass')
+  );
 });
