@@ -8,7 +8,7 @@
   ?>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="keyword" content="@hippohack, hippoblog">
+  <meta name="keyword" content="@hippohack, hippoblog, hippohack">
   <meta name="description" content="<?php bloginfo('description'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="Cache-Control" content="max-age=31557600">
@@ -16,6 +16,7 @@
   <link rel="preconnect" href="https://googleads.g.doubleclick.net">
   <link rel="preconnect" href="https://www.google-analytics.com">
   <link rel="preconnect" href="https://adservice.google.co.jp">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/_assets/css/index.css'; ?>">
   <?php // get_template_part( 'modules/header/schema' );
   ?>
   <?php // get_template_part( 'modules/header/favicon' );
@@ -36,12 +37,14 @@
       echo $current_page_num;
     } ?>
   </title>
+
   <?php wp_head(); ?>
 </head>
 
 <body>
   <?php _get_page_component($args['component_name']); ?>
 
+  <script src="<?php echo get_template_directory_uri() . '/_assets/js/bundle.js'; ?>"></script>
   <?php wp_footer(); ?>
 </body>
 
