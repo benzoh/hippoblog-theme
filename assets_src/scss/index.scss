@@ -1,3 +1,8 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
 
-// TODO: bootstrapのロード
+@import "init.scss";
+@import "mixin.scss";
+@import "util.scss";
+
+@import "components/atoms/*";

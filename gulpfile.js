@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const path = require("path");
 const sass = require('gulp-sass');
+const sassGlob = require("gulp-sass-glob");
 const postcss = require('gulp-postcss');
 const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('autoprefixer');
@@ -18,6 +19,7 @@ const SASS_INCLUDE_PATHS = [
 gulp.task('sass', () => {
   return gulp.src(src_path)
     .pipe(sourcemaps.init())
+    .pipe(sassGlob())
     .pipe(sass({
       outputStyle: 'compressed',
       includePaths: SASS_INCLUDE_PATHS
