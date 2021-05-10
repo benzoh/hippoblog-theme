@@ -1,11 +1,20 @@
-<header class="">
+<header class="header">
   <div class="container">
-    <div class="row">
-      <div class="col">logo</div>
-      <div class="col-auto">search</div>
-      <div class="col-auto js_menu-btn">menu</div>
+    <div class="row align-items-center">
+      <div class="col">
+        <div class="logo"> HippoBlog </div>
+      </div>
+      <div class="col-auto">
+        <div class="search">
+          <div class="search__icon"><i class="bi bi-search"></i></div>
+        </div>
+      </div>
+      <div class="col-auto">
+        <div class="js_menu-btn menu">
+          <div class="menu__icon"><i class="bi bi-list"></i></div>
+          <div class="menu__icon d-none"><i class="bi bi-x"></i></div>
+        </div>
+      </div>
     </div>
   </div>
 </header>
-<i class="bi-alarm"></i>
-<i class="bi-alarm" style="font-size: 2rem; color: cornflowerblue;"></i>
