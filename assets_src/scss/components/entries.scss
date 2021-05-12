@@ -1,0 +1,35 @@
+.entries {
+  &__item {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: $boxShadowParam;
+    margin-bottom: 15px;
+    overflow: hidden;
+    padding: 10px;
+    color: $fontColor;
+    font-weight: bold;
+    text-decoration: none;
+
+    &.first {
+      flex-direction: column;
+      margin-top: 15px;
+    }
+
+    &.not_first {
+      flex-direction: row;
+    }
+  }
+
+  &__img {
+    max-width: 120px;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+  }
+
+  &__data {
+    width: 100%;
+    padding: 0 0 10px 10px;
+  }
+}

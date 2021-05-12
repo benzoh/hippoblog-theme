@@ -1,4 +1,21 @@
+// theme
+$boxShadowParam: 0 5px 30px #00000033;
+$fontColor: #000;
+$fontColorSub: #545454;
+
+// font
 @font-face {
   font-family: bootstrap-icons;
   src: url(../fonts/bootstrap-icons.woff2);
+}
+
+// reset
+body {
+  max-width: 100%;
+  background-color: #fdfdfd;
+  color: $fontColor;
+}
+
+img {
+  max-width: 100%;
 }

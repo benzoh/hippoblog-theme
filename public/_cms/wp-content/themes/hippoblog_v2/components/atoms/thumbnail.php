@@ -1,6 +1,6 @@
 <?php
 
-_D($args['post_thumbnail'][0]);
+// _D($args['post_thumbnail'][0]);
 
 ?>
 

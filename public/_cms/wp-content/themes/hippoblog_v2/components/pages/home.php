@@ -12,10 +12,14 @@ $args = array(
 $entries = get_posts($args);
 ?>
 
-<?php if ($entries) : ?>
-<div class="d-flex flex-wrap">
-  <?php get_template_part('components/molecules/entries', null, $entries); ?>
-</div>
-<?php endif; ?>
+<main style="margin-top: 55px;">
+  <div class="container">
+    <?php if ($entries) : ?>
+    <div class="d-flex flex-wrap">
+      <?php get_template_part('components/molecules/entries', null, $entries); ?>
+    </div>
+    <?php endif; ?>
+  </div>
+</main>
 
 <?php get_template_part('components/organisms/footer'); ?>
