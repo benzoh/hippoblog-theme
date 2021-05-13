@@ -1,9 +1,10 @@
 <header class="header">
+  <h1 class="text-hide d-none">HippoBlog 𓃯</h1>
   <div class="container">
     <nav>
       <div class="row align-items-center">
         <div class="col">
-          <div class="logo"> HippoBlog 𓃯 </div>
+          <div class="logo">HippoBlog 𓃯</div>
         </div>
         <div class="col-auto">
           <div class="search">

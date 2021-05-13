@@ -15,6 +15,7 @@
     &.first {
       flex-direction: column;
       margin-top: 15px;
+      padding: 0;
     }
 
     &.not_first {
@@ -42,6 +43,11 @@
     border-radius: 10px;
     overflow: hidden;
     height: 100%;
+
+    .first & {
+      max-width: 100%;
+      border-radius: 10px 10px 0 0;
+    }
   }
 
   &__data {
@@ -49,10 +55,20 @@
     padding: 0 0 40px 10px;
     position: relative;
 
+    .first & {
+      padding: 10px;
+      padding-bottom: 40px;
+    }
+
     .date {
       position: absolute;
       bottom: 0;
       left: 10px;
+
+      .first & {
+        bottom: 10px;
+        left: 12px;
+      }
     }
   }
 }
