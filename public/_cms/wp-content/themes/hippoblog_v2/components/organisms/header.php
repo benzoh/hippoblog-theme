@@ -3,7 +3,7 @@
     <nav>
       <div class="row align-items-center">
         <div class="col">
-          <div class="logo"> HippoBlog </div>
+          <div class="logo"> HippoBlog 𓃯 </div>
         </div>
         <div class="col-auto">
           <div class="search">
