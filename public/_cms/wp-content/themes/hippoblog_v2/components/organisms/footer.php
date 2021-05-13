@@ -2,10 +2,10 @@
 // echo __FILE__;
 ?>
 
-<footer>
+<footer class="footer">
   <div class="container">
-    <h3>Tag List</h3>
-    <ul class="d-flex flex-wrap">
+    <h3 class="title mb-2">🔖 Tag List</h3>
+    <ul class="tag-list d-flex flex-wrap">
       <?php
       $terms = get_terms(['hashtag']);
       foreach ($terms as $term) {
