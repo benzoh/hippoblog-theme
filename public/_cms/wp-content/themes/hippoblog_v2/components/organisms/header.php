@@ -7,15 +7,15 @@
           <div class="logo">HippoBlog 𓃯</div>
         </div>
         <div class="col-auto">
-          <div class="search">
+          <a href="#TODO: 検索窓展開" class="search d-block">
             <div class="search__icon"><i class="bi bi-search"></i></div>
-          </div>
+          </a>
         </div>
         <div class="col-auto">
-          <div class="js_menu-btn menu">
+          <a href="#TODO: メニュー展開" class="js_menu-btn menu d-block">
             <div class="menu__icon"><i class="bi bi-list"></i></div>
             <div class="menu__icon d-none"><i class="bi bi-x"></i></div>
-          </div>
+          </a>
         </div>
       </div>
     </nav>
