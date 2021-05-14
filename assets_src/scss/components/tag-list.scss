@@ -1,0 +1,18 @@
+.tag-list {
+  overflow: hidden;
+  margin-bottom: 30px;
+
+  li {
+    background-color: $mainColor;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 7.5px;
+
+    a {
+      font-size: 12px;
+      color: #fff;
+      padding: 6px 15px;
+      display: block;
+    }
+  }
+}

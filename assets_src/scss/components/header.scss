@@ -1,0 +1,12 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: $mainColor;
+  box-shadow: $boxShadowParam;
+  z-index: 100;
+
+  * {
+    color: #fff;
+  }
+}

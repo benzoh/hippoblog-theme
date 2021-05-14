@@ -1,0 +1,30 @@
+.see-more {
+  a {
+    color: #fff;
+    background-color: $mainColor;
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: $boxShadowParam;
+
+    &::after {
+      content: "+";
+      font-weight: bold;
+      display: block;
+      width: 25px;
+      height: 25px;
+      line-height: 25px;
+      background-color: #fff;
+      color: $mainColor;
+      border-radius: 100%;
+      margin-left: 5px;
+    }
+
+    &:hover, &:focus {
+      color: #fff;
+    }
+  }
+}

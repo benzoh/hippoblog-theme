@@ -1,0 +1,74 @@
+.entries {
+  &__item {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: $boxShadowParam;
+    margin-bottom: 15px;
+    overflow: hidden;
+    padding: 10px;
+    color: $fontColor;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+
+    &.first {
+      flex-direction: column;
+      margin-top: 15px;
+      padding: 0;
+    }
+
+    &.not_first {
+      flex-direction: row;
+    }
+
+    &::after {
+      content: "→";
+      display: block;
+      position: absolute;
+      right: 13px;
+      bottom: 13px;
+      width: 27px;
+      height: 27px;
+      border-radius: 13.5px;
+      background-color: $mainColor;
+      color: #fff;
+      text-align: center;
+      line-height: 27px;
+    }
+  }
+
+  &__img {
+    max-width: 120px;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+
+    .first & {
+      max-width: 100%;
+      border-radius: 10px 10px 0 0;
+    }
+  }
+
+  &__data {
+    width: 100%;
+    padding: 0 0 40px 10px;
+    position: relative;
+
+    .first & {
+      padding: 10px;
+      padding-bottom: 40px;
+    }
+
+    .date {
+      position: absolute;
+      bottom: 0;
+      left: 10px;
+
+      .first & {
+        bottom: 10px;
+        left: 12px;
+      }
+    }
+  }
+}

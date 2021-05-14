@@ -1,0 +1,160 @@
+@mixin transition_base {
+  transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  transition-delay: 0;
+}
+
+@mixin editor-style {
+  padding: 30px 0;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  font-size: 15px;
+
+  & > *:first-child {
+    margin-top: 0;
+  }
+
+  h1 {
+    padding: 12px 18px 7px;
+    background-color: $black;
+    color: #fff;
+    position: relative;
+    font-size: 19px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    &:after {
+      content: "";
+      position: absolute;
+      left: 60px;
+      /* right: 0; */
+      bottom: -19px;
+      /* display: block; */
+      /* margin: 0; */
+      width: 0;
+      height: 0;
+      border-top: 12px solid $black;
+      border-left: 9px solid transparent;
+      border-right: 9px solid transparent;
+      border-bottom: 7px solid transparent;
+    }
+  }
+  h2 {
+    border-bottom: solid 2px $black;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 9px 7px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  h3 {
+    border-left: solid 3px $black;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 2px 18px 0px 12px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+  }
+  a {
+    text-decoration: underline;
+    color: #00abb5;
+    word-wrap: break-word;
+  }
+  em {
+    font-style: normal;
+    font-weight: bold;
+  }
+  em.file-name {
+    // codeのファイル名に使用
+    font-style: normal;
+    padding: 8px 10px 5px;
+    margin: 0;
+    background: #354551;
+    color: #fff;
+    position: relative;
+    top: 12px;
+    display: block;
+    border-bottom: dotted 1px #666;
+    font-size: 13px;
+  }
+  strong {
+    // 強い強調
+    border-bottom: solid 3px rgba(233, 219, 45, 1);
+  }
+  hr {
+    border: none;
+    border-bottom: dotted 1px #ccc;
+  }
+  blockquote {
+    overflow: hidden;
+    background-color: #efefef;
+    border-left: solid 5px #ccc;
+    padding: 12px;
+    margin: 0 12px 24px;
+    color: $black;
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  ul {
+    margin-left: 33px;
+    margin-bottom: 20px;
+    li {
+      list-style-type: square;
+      margin-bottom: 9px;
+      & > ul {
+        margin-top: 9px;
+        margin-bottom: 0;
+        li {
+          list-style-type: circle;
+        }
+      }
+    }
+  }
+
+  pre,
+  code {
+    // font-family: "Source Code Pro",monospace;
+    font-size: 13px;
+    white-space: pre-wrap;
+  }
+  pre {
+    overflow-x: scroll;
+    // background-color: #354551;
+    padding: 12px;
+    code {
+      color: #c7254e;
+      background-color: inherit;
+      border-radius: 4px;
+      color: #fff;
+      padding: 0;
+    }
+  }
+  code {
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 4px;
+    padding: 2px 4px;
+  }
+  iframe {
+    @media (max-width: 575.98px) {
+      max-width: 100%;
+    }
+  }
+  table {
+    margin-bottom: 15px;
+  }
+  // TODO: 記事内の画像サイズ ここ怪しい
+  p > img,
+  p > a > img {
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}
