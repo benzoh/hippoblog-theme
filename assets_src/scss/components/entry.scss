@@ -1,0 +1,40 @@
+.entry {
+  &__img {
+    width: calc(100% + 30px);
+    margin-left: -15px;
+    height: 100%;
+  }
+
+  &__data {
+    width: calc(100% + 30px);
+    margin-left: -15px;
+    padding: 30px 10px;
+    background-color: $mainColorThin;
+
+    .title {
+      font-size: 20px;
+    }
+
+    .date {
+
+    }
+  }
+
+  &__tag {
+    background-color: $black;
+    border-radius: 7.5px;
+
+    a {
+      padding: 2px 10px;
+      font-size: 12px;
+      color: $white;
+      text-decoration: none;
+      display: block;
+    }
+  }
+
+  &__body {
+    padding: 30px 0;
+    @include editor-style;
+  }
+}

@@ -1,5 +1,8 @@
 <header class="header">
+  <?php if (is_home()) : ?>
   <h1 class="text-hide d-none">HippoBlog 𓃯</h1>
+  <?php endif; ?>
+
   <div class="container">
     <nav>
       <div class="row align-items-center">

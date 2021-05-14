@@ -1,9 +1,13 @@
 // theme
+$white: #fff;
+$black: #000;
+
 $boxShadowParam: 0 5px 30px #00000033;
-$fontColor: #000;
+$fontColor: $black;
 $fontColorSub: #545454;
 $mainColor: #b22029; // coleman red!!
 $mainColorLight: #c4323c;
+$mainColorThin: #ffe8e8;
 
 // font
 @font-face {

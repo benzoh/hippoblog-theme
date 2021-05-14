@@ -215,3 +215,13 @@ function _get_page_component($component_name)
 {
   get_template_part('components/pages/' . $component_name);
 }
+
+// 自動的にリダイレクトするの拒否
+add_filter('redirect_canonical', '_no_redirect_on_404');
+function _no_redirect_on_404($redirect_url)
+{
+  if (is_404()) {
+    return false;
+  }
+  return $redirect_url;
+}
