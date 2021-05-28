@@ -4,7 +4,7 @@
 
 <footer class="footer">
   <div class="container">
-    <h3 class="title mb-2">🔖 Tag List</h3>
+    <h3 class="title mb-2">🔖　Tag List</h3>
     <ul class="tag-list d-flex flex-wrap">
       <?php
       $terms = get_terms(['hashtag']);
